@@ -11,4 +11,4 @@ GIT ID is a hash (sha-1) value of an object. It is unique for a given file/objec
 *References*
 Reference is a user friendly name that points to a commits sha-1 value
 
- 
+COnflict 
