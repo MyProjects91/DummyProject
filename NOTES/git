@@ -9,6 +9,59 @@ A blob is an object that stores the content of a file that is being managed by G
 GIT ID is a hash (sha-1) value of an object. It is unique for a given file/object. GIt object names are also known as git ids
 
 *References*
-Reference is a user friendly name that points to a commits sha-1 value
+Reference is a user friendly name that points to a commits sha-1 value.
 
-COnflict 
+~ can be used to show older commits 
+
+*Tags*
+Ref attached to a specific commit., USer friendly label for the commit. 
+- lightweight tag - simple, refers comit object  
+- Annotated Tag - similar to commit object includes metadata of the commit.. 
+
+*Branches*
+- branch is set of commits that trace back to the first commit
+- creating a branch creates a branch label, deleting deltes it
+- branch checkout updates HEAD and working tree
+- detached headpoints diretly to commit.. create a branch to fix this 
+- dangling commits will eventually be garbage collected 
+
+*Merging*
+Main types of merges:
+1. Fast-forward merge
+2. Merge commit
+3. Squash Merge
+4. Rebase
+
+FF Merge: Default
+moves base branch label to the tip of theopic branch. Multiple commits in a feature branch, FF moves the base branch label to the latest of the multiple commits in the feature branch. Only possible if no other merge was made to the base branch since the feature branch was created
+linear commit graph
+
+Merge Commit:2nd default after FF
+Combines the commits at the tip of the merged branches. PLaces the result in merge commit. 
+Can result in merge conflict 
+non-linear commit graph
+--no-ff flag with git merge
+
+
+WEEK3: BRANCHING and MERGING II
+Resolving MErge Conflict 
+- Basic steps to reusolve merge conflict 
+1. checkout master
+2. merge feature branch 
+	git informs of a conflict 
+3. Open and fix the file that shows merge conflict manually 
+4. stage the changed file 
+5. commit 
+6. delete the feature brach - optional 
+
+WHAT IS A TRACKING BRANCH??
+
+CLONE, FETCH, PULL, PUSH - network commands that communicate with remote repos
+
+
+REBASE:
+- rewrites log history 
+- do it only if you are using the branch 
+- regular vs interactive rebase 
+-commit ids change
+-
