@@ -63,5 +63,24 @@ REBASE:
 - rewrites log history 
 - do it only if you are using the branch 
 - regular vs interactive rebase 
--commit ids change
--
+- commit ids change
+- This get you any changes made to remote branch to your local branch
+ make sure your master is latest
+ checkout the feature branch
+ git rebase master
+- If there are merge conflicts resolve as regular merge conflicts 
+
+Rewriting History / Changing commit SHA
+AMMEND
+ - change commit data without creating a new commit 
+
+Interactive Rebase
+- executed with -i argument 
+- can be used to squash commits
+
+Squash Merges  
+- checkout master 
+- git merge --squash featureX
+- git commit 
+
+
