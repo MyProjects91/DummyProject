@@ -55,3 +55,13 @@ Resolving MErge Conflict
 6. delete the feature brach - optional 
 
 WHAT IS A TRACKING BRANCH??
+
+CLONE, FETCH, PULL, PUSH - network commands that communicate with remote repos
+
+
+REBASE:
+- rewrites log history 
+- do it only if you are using the branch 
+- regular vs interactive rebase 
+-commit ids change
+-
