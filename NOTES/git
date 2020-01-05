@@ -83,4 +83,9 @@ Squash Merges
 - git merge --squash featureX
 - git commit 
 
+Forking:
+Copying repo to your own account 
+upsteram repo is source of truth where as fork is your version 
+Fork can be used to issue PR for upstream project -> to contribute 
+can also be used to branch off from a project for private maintenance 
 
